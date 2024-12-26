@@ -1,0 +1,17 @@
+version: '2'
+services:
+  plex:
+    container_name: plex
+    image: plexinc/pms-docker:latest
+    restart: unless-stopped
+    environment:
+      - TZ=Australia/Melbourne
+      - PLEX_CLAIM=claim-UGsLTqe7sgcz-3-Ciofw
+    network_mode: host
+    volumes:
+      - /mnt/HDD/Docker/Plex/Volumes/Database:/config
+      - /mnt/HDD/Docker/Plex/Volumes/Transcode:/transcode
+      # - /mnt/HDD/Media:/data
+      - /mnt/HDD/Media/Movies:/data/Movies
+      - /mnt/HDD2/Media/TV:/data/TV
+      - /mnt/HDD/Media/Music:/data/Music
