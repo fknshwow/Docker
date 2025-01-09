@@ -9,7 +9,8 @@ services:
     volumes:
       - /mnt/HDD/Docker/Lidarr/Volumes/Config:/config
       - /mnt/HDD/Media/Music:/music
-      - /mnt/HDD/Downloads:/downloads
+      #- /mnt/HDD/Downloads/QBittorrent:/downloads
+      - /mnt/HDD/Docker/Slskd/Volumes/App/downloads:/downloads
     ports:
       - 8686:8686
     restart: unless-stopped

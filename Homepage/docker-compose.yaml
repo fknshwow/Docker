@@ -1,0 +1,10 @@
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    ports:
+      - 3000:3000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /mnt/HDD/Docker/Homepage/Volumes/Config:/app/config
+      - /mnt/HDD/Docker/Homepage/Volumes/PublicImages:/app/public/images

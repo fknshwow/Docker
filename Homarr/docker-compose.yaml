@@ -8,7 +8,7 @@ services:
     image: ghcr.io/ajnart/homarr:latest
     restart: unless-stopped
     volumes:
-      #- /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
+      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
       - /mnt/HDD/Docker/Homarr/Volumes/Configs:/app/data/configs
       - /mnt/HDD/Docker/Homarr/Volumes/Icons:/app/public/icons
       - /mnt/HDD/Docker/Homarr/Volumes/Data:/data

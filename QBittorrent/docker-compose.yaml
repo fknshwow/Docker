@@ -10,7 +10,7 @@ services:
       - TORRENTING_PORT=56119
     volumes:
       - /mnt/HDD/Docker/QBittorrent/Volumes/AppData:/config
-      - /mnt/HDD/Downloads:/downloads #optional
+      - /mnt/HDD/Downloads/QBittorrent:/downloads #optional
     ports:
       - 5140:5140
       - 6881:6881

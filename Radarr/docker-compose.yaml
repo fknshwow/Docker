@@ -9,7 +9,7 @@ services:
     volumes:
       - /mnt/HDD/Docker/Radarr/Volumes/Data:/config
       - /mnt/HDD/Media/Movies:/movies
-      - /mnt/HDD/Downloads:/downloads
+      - /mnt/HDD/Downloads/QBittorrent:/downloads
     ports:
       - 7878:7878
     restart: unless-stopped

@@ -9,7 +9,7 @@ services:
     volumes:
       - /mnt/HDD/Docker/Sonarr/Volumes/Data:/config
       - /mnt/HDD2/Media/TV:/tv
-      - /mnt/HDD/Downloads:/downloads
+      - /mnt/HDD/Downloads/QBittorrent:/downloads
     ports:
       - 8989:8989
     restart: unless-stopped
